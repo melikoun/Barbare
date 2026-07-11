@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Barbare | Melikoun</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: clamp(70px, 18vw, 260px);
+      font-weight: 900;
+      line-height: 0.85;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      margin-top: 35px;
+      font-size: clamp(22px, 4vw, 45px);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .video-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .video-container {
+      width: min(1100px, 100%);
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .booking-section {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .booking-button {
+      display: inline-block;
+      padding: 24px 45px;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      font-size: clamp(18px, 3vw, 30px);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: 0.25s ease;
+    }
+
+    .booking-button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        letter-spacing: -0.05em;
+      }
+
+      .booking-button {
+        width: 100%;
+        max-width: 340px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <h1>Barbare</h1>
+      <p>Melikoun</p>
+    </section>
+
+    <section class="video-section">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/uTjYhdwxWVY"
+          title="Vidéo de Melikoun"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="booking-section">
+      <a
+        class="booking-button"
+        href="https://ton-lien-de-reservation.com"
+        target="_blank"
+        rel="noopener noreferrer">
+        Réserver
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © Melikoun
+  </footer>
+</body>
+</html>
