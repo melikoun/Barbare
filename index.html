@@ -110,8 +110,6 @@
       padding: clamp(28px, 6vw, 100px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
-
-    letter-spacing: -0.02em;
     
     .statement p {
       max-width: 1500px;
@@ -185,6 +183,12 @@
       line-height: 1.4;
       text-transform: uppercase;
     }
+    
+    .familial-word {
+  display: inline-block;
+  letter-spacing: -0.04em;
+  transform: translateX(0.08em);
+}
 
     .booking-button {
       display: inline-flex;
@@ -381,7 +385,7 @@
       <h2 class="booking-heading">
         Pas<br>
         du tout<br>
-        familial.
+        <span class="familial-word">familial.</span>
       </h2>
 
       <div class="booking-bottom">
